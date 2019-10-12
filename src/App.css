@@ -20,3 +20,186 @@
 .App-link {
   color: #09d3ac;
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+footer {
+  background-color: #181818;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+footer>p {
+  margin-bottom: 0;
+}
+
+footer>hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+footer>h5>i {
+  font-size: 2rem;
+}
+
+nav.navbar {
+  font-size: 24px;
+  padding: 0 1rem;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+header#header {
+  height: 100vh;
+  background-color: #181818;
+  z-index: 0;
+  font-size: 5rem;
+  font-family:"Oswald",
+  sans-serif;
+}
+
+
+span#letter-a {
+  color: #08fdd8;
+}
+
+span#letter-n {
+  color: #ff0a56;
+}
+
+
+span.first-letter {
+  font-size: 1.5em;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+a.social-icons {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.navbar-text {
+  float: right;
+}
+
+.social-icons:hover {
+  text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+  header#header {
+    font-size: calc(1.8rem + 4.2666666667vw);
+  }
+}
+
+header>#header-content {
+  position: relative;
+  top: 40%;
+  background-color: transparent;
+  color: #fff;
+  border: 10px solid #fff;
+  border-radius: 0;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+  padding: 5px;
+  font-family: "Oswald",
+  sans-serif;
+  z-index: 1;
+  /*display: none;*/
+}
+
+
+section.content {
+  z-index: 1;
+  background-color: #5c3d9c;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+}
+
+section#sectionOne {
+  font-family: "Oswald",
+  sans-serif;
+}
+
+div#whoAmIContent {
+  color: white;
+
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+div#whoAmIContent>p {
+  font-size: 18px;
+}
+
+
+section#WhoAmI {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-lg-6 {
+  padding: 0;
+}
+
+img.img-fluid {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+section#competences {
+  background-color: #2e4053;
+}
+section#competences div.card {
+  color: #2e4053;
+  margin-bottom: 3%;
+
+}
+
+@media screen and (max-width: 700px) {
+  header>#header-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.card {
+    margin-top: 10px;
+  }
+}
