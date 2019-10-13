@@ -69,8 +69,7 @@ export default class SkillList extends React.Component {
 
     render(){
         let index = 0;
-        return(
-            <div className="col-sm-6 d-flex align-item stretch">
+        return(       
                 <Card>
                     <Card.Body>
                         <h5 className="card-title">{this.state.tech.title}</h5>
@@ -79,7 +78,6 @@ export default class SkillList extends React.Component {
                             )}
                     </Card.Body>
                 </Card>
-            </div>
         );
     }
 } 

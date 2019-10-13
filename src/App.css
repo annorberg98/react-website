@@ -192,6 +192,57 @@ section#competences div.card {
 
 }
 
+ul.contact-list>li {
+  display: inline-block;
+}
+
+
+.contact-icons {
+  font-size: 5rem;
+  color: #000;
+}
+
+ul#contact-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul#contact-list li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+ul#contact-list li a:hover {
+  color: #f56b5e;
+  text-decoration: underline;
+}
+
+ul#contact-list li a i {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+ul#contact-list li a i:hover {
+  color: #ed5181;
+}
+
+
+section#personalSection {
+  background-color: #ff0a56;
+  font-family: "Oswald",
+  sans-serif;
+}
+
+section#personalSection,
+section#personalSection>p>a {
+  color: black;
+}
+
 @media screen and (max-width: 700px) {
   header>#header-content {
     width: 100%;

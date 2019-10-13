@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Card} from 'react-bootstrap';
 import SkillList from '../Skill/Skilllist';
 import Footer from '../Footer/Footer';
 
-function Homepage(props){
+export default function Homepage(props){
+    // Declare a new state variable
+    const [page, setPage] = useState('home');
+
+    // Similar to componentDidMount and componentDidUpdate:
+    useEffect(() => {
+        // Update the document title using the browser API
+        console.log({page});
+    });
+
     return (
         <div>
             <header id="header">
@@ -41,17 +50,64 @@ function Homepage(props){
                     </div>
                 </section>
                 <section className="card card-body" id="skills">
-                    <h3>Skills</h3>
                 </section>
                 <section className="content" id="competences">
                     <div className="row">
-                        <SkillList tech="Web" />
-                        <SkillList tech="Programming" />
+                        <div className="col-6">
+                            <SkillList tech="Web" />
+                        </div>
+                        <div className="col-6">
+                            <SkillList tech="Programming" />
+                        </div>
                     </div>
+                </section>
+                <section className="card card-body" id="contact">
+                    <h4 className="contact-content">
+                    Contact
+                    </h4>
+                    <div>
+                    <ul id="contact-list">
+                        <li>
+                        <h5>
+                            <a href="mailto:me@antonnorberg.se" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                            <i className="fas fa-envelope"></i>
+                            </a>
+                        </h5>
+                        <p><a href="mailto:me@antonnorberg.se">me@antonnorberg.se</a></p>
+                        </li>
+                        <li>
+                        <h5>
+                            <a href="https://www.linkedin.com/in/anton-norberg/" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                            <i className="fab fa-linkedin-in"></i>
+                            </a>
+                        </h5>
+                        <p><a href="https://www.linkedin.com/in/anton-norberg/">Anton Norberg</a></p>
+                        </li>
+                        <li>
+                        <h5>
+                            <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                            <i className="fab fa-github"></i>
+                            </a>
+                        </h5>
+                        <p><a href="https://github.com/annorberg98/">annorberg98</a></p>
+                        </li>
+                        <li>
+                        <h5>
+                            <a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                            <i className="fas fa-map-marked-alt"></i>
+                            </a>
+                        </h5>
+                        <p><a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer">Malmö, Sweden</a></p>
+                        </li>
+                    </ul>
+                    </div>
+                </section>
+                <section className="content" id="personalSection">
+                    <h1>Want to check out my projects?</h1>
+                    <p><a href="#projects" onClick={() => setPage('project')}>Click here!</a></p>
                 </section>
             </main>
             <Footer />
         </div>
-        
     );
-} export default Homepage;
+}
