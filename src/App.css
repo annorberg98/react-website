@@ -74,7 +74,8 @@ nav.navbar {
 
 header#header {
   height: 100vh;
-  background-color: #181818;
+  background-color: #282c34;
+  background-image: linear-gradient(to top left, rgb(58, 37, 112), rgb(65, 37, 110), rgb(72, 36, 109), rgb(78, 36, 107), rgb(85, 35, 105), rgb(92, 35, 103), rgb(99, 34, 102), rgb(106, 34, 100), rgb(113, 33, 98), rgb(119, 33, 96), rgb(126, 32, 95), rgb(133, 32, 93));
   z-index: 0;
   font-size: 5rem;
   font-family:"Oswald",
@@ -169,6 +170,14 @@ section#WhoAmI {
   padding: 0;
 }
 
+#about-me-card {
+  background-color: transparent;
+  border:none;
+  top:20%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 .row {
   margin: 0;
 }
@@ -185,49 +194,45 @@ img.img-fluid {
 
 section#competences {
   background-color: #2e4053;
+  background-image: linear-gradient(to bottom left, rgb(58, 37, 112), rgb(55, 44, 112), rgb(53, 51, 113), rgb(50, 58, 113), rgb(47, 65, 114), rgb(45, 72, 114), rgb(42, 78, 115), rgb(40, 85, 115), rgb(37, 92, 116), rgb(34, 99, 116), rgb(32, 106, 117), rgb(29, 113, 117));
 }
 section#competences div.card {
   color: #2e4053;
-  margin-bottom: 3%;
+  margin: 10px;
 
 }
-
-ul.contact-list>li {
-  display: inline-block;
-}
-
 
 .contact-icons {
   font-size: 5rem;
   color: #000;
 }
 
-ul#contact-list {
+div#contact-list {
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
 
-ul#contact-list li a {
+div#contact-list p a {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-ul#contact-list li a:hover {
+div#contact-list p a:hover {
   color: #f56b5e;
   text-decoration: underline;
 }
 
-ul#contact-list li a i {
+div#contact-list h5 a i {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-ul#contact-list li a i:hover {
+div#contact-list h5 a i:hover {
   color: #ed5181;
 }
 
@@ -240,13 +245,20 @@ section#personalSection {
 
 section#personalSection,
 section#personalSection>p>a {
-  color: black;
+  color: white;
+}
+
+@media screen and (max-width: 990) {
+  section#competences div.card {
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 700px) {
   header>#header-content {
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 576px) {

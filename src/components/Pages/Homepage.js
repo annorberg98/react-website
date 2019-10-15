@@ -1,18 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Card} from 'react-bootstrap';
 import SkillList from '../Skill/Skilllist';
 import Footer from '../Footer/Footer';
 
 export default function Homepage(props){
-    // Declare a new state variable
-    const [page, setPage] = useState('home');
-
-    // Similar to componentDidMount and componentDidUpdate:
-    useEffect(() => {
-        // Update the document title using the browser API
-        console.log({page});
-    });
-
     return (
         <div>
             <header id="header">
@@ -36,16 +27,25 @@ export default function Homepage(props){
                         <img src="assets/coding.jpeg" alt="PlaceholderImage" className="img-fluid" />
                     </div>
                     <div className="col-lg-6" id="whoAmIContent">
-                        <p>
-                        I am a student at Malmö University, doing 3rd and final year at the Information Architect Programme.
-                        This programme allows me to gain a lot of knowledge in the different areas of Software Development sush as
-                        Front and Backend Development, Database design, Security and Usability.
-                        </p>
-                        <p>
-                        Alltough my heart is at the Backend, I do enjoy programming in the Frontend aswell.
-                        </p>
-                        <p>I strive to be a true polyglot, knowing many different Programming languanges. I allways keep up to date with
-                        the latest news in the industry, contsamtly learning new technologies.</p>
+                        <Card id="about-me-card">
+                            <Card.Body>
+                            <p>
+                                I am a student at Malmö University, doing 3rd and final year at the Information Architect Programme.
+                                This programme allows me to gain a lot of knowledge in the different areas of Software Development sush as
+                                Front and Backend Development, Database design, Security and Usability.
+                            </p>
+                            <p>
+                                Alltough my heart is at the Backend, I do enjoy programming in the Frontend aswell.
+                            </p>
+                            <p>
+                                I strive to be a true polyglot, knowing many different Programming languanges. I allways keep up to date with
+                                the latest news in the industry, contsamtly learning new technologies.
+                            </p>
+                            <p>
+                                I have a huge interest in Information -and Cyber Security. 
+                            </p>
+                            </Card.Body>
+                        </Card>
                     </div>
                     </div>
                 </section>
@@ -53,10 +53,10 @@ export default function Homepage(props){
                 </section>
                 <section className="content" id="competences">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-lg-6 col-sm-12">
                             <SkillList tech="Web" />
                         </div>
-                        <div className="col-6">
+                        <div className="col-lg-6 col-sm-12">
                             <SkillList tech="Programming" />
                         </div>
                     </div>
@@ -65,46 +65,46 @@ export default function Homepage(props){
                     <h4 className="contact-content">
                     Contact
                     </h4>
-                    <div>
-                    <ul id="contact-list">
-                        <li>
-                        <h5>
-                            <a href="mailto:me@antonnorberg.se" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                            <i className="fas fa-envelope"></i>
-                            </a>
-                        </h5>
-                        <p><a href="mailto:me@antonnorberg.se">me@antonnorberg.se</a></p>
-                        </li>
-                        <li>
-                        <h5>
-                            <a href="https://www.linkedin.com/in/anton-norberg/" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                            <i className="fab fa-linkedin-in"></i>
-                            </a>
-                        </h5>
-                        <p><a href="https://www.linkedin.com/in/anton-norberg/">Anton Norberg</a></p>
-                        </li>
-                        <li>
-                        <h5>
-                            <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                            <i className="fab fa-github"></i>
-                            </a>
-                        </h5>
-                        <p><a href="https://github.com/annorberg98/">annorberg98</a></p>
-                        </li>
-                        <li>
-                        <h5>
-                            <a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                            <i className="fas fa-map-marked-alt"></i>
-                            </a>
-                        </h5>
-                        <p><a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer">Malmö, Sweden</a></p>
-                        </li>
-                    </ul>
+                    <div id="contact-list">
+                        <div className="row">
+                            <div className="col-3">
+                                <h5>
+                                    <a href="mailto:me@antonnorberg.se" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                                    <i className="fas fa-envelope"></i>
+                                    </a>
+                                </h5>
+                                <p><a href="mailto:me@antonnorberg.se">me@antonnorberg.se</a></p>
+                            </div>
+                            <div className="col-3">
+                                <h5>
+                                    <a href="https://www.linkedin.com/in/anton-norberg/" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                                        <i className="fab fa-linkedin-in"></i>
+                                    </a>
+                                </h5>
+                                <p><a href="https://www.linkedin.com/in/anton-norberg/">Anton Norberg</a></p>
+                            </div>
+                            <div className="col-3">
+                                <h5>
+                                    <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                                    <i className="fab fa-github"></i>
+                                    </a>
+                                </h5>
+                                <p><a href="https://github.com/annorberg98/">annorberg98</a></p>
+                            </div>
+                            <div className="col-3">
+                                <h5>
+                                    <a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer" className="contact-icons">
+                                    <i className="fas fa-map-marked-alt"></i>
+                                    </a>
+                                </h5>
+                                <p><a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer">Malmö, Sweden</a></p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section className="content" id="personalSection">
                     <h1>Want to check out my projects?</h1>
-                    <p><a href="#projects" onClick={() => setPage('project')}>Click here!</a></p>
+                    <p><a href="#projects">Click here!</a></p>
                 </section>
             </main>
             <Footer />
