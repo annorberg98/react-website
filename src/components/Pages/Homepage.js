@@ -67,7 +67,7 @@ export default function Homepage(props){
                     </h4>
                     <div id="contact-list">
                         <div className="row">
-                            <div className="col-3">
+                            <div className="col-lg-3 col-sm-12">
                                 <h5>
                                     <a href="mailto:me@antonnorberg.se" target="_blank" rel="noopener noreferrer" className="contact-icons">
                                     <i className="fas fa-envelope"></i>
@@ -75,7 +75,7 @@ export default function Homepage(props){
                                 </h5>
                                 <p><a href="mailto:me@antonnorberg.se">me@antonnorberg.se</a></p>
                             </div>
-                            <div className="col-3">
+                            <div className="col-lg-3 col-sm-12">
                                 <h5>
                                     <a href="https://www.linkedin.com/in/anton-norberg/" target="_blank" rel="noopener noreferrer" className="contact-icons">
                                         <i className="fab fa-linkedin-in"></i>
@@ -83,7 +83,7 @@ export default function Homepage(props){
                                 </h5>
                                 <p><a href="https://www.linkedin.com/in/anton-norberg/">Anton Norberg</a></p>
                             </div>
-                            <div className="col-3">
+                            <div className="col-lg-3 col-sm-12">
                                 <h5>
                                     <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer" className="contact-icons">
                                     <i className="fab fa-github"></i>
@@ -91,7 +91,7 @@ export default function Homepage(props){
                                 </h5>
                                 <p><a href="https://github.com/annorberg98/">annorberg98</a></p>
                             </div>
-                            <div className="col-3">
+                            <div className="col-lg-3 col-sm-12">
                                 <h5>
                                     <a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer" className="contact-icons">
                                     <i className="fas fa-map-marked-alt"></i>

@@ -12,7 +12,7 @@ export default class SkillList extends React.Component {
                     'value': 90
                 },
                 {
-                    'name ' : 'CSS', 
+                    'name': 'CSS', 
                     'value': 75
                 },
                 { 

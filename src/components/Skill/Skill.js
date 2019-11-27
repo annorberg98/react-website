@@ -8,7 +8,7 @@ function Skill(props){
             <p>
                 <b>{props.title}</b>
             </p>
-            <ProgressBar now={props.value} variant='dark' />
+            <ProgressBar now={props.value} variant='info' />
         </div>
     );
 } export default Skill;
