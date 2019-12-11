@@ -29,7 +29,7 @@ export default class SkillList extends React.Component {
                 },
                 {
                     'name': 'Angular',
-                    'value': 20
+                    'value': 10
                 }
             ],
         },

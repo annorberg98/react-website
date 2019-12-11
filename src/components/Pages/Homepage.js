@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 import SkillList from '../Skill/Skilllist';
+import ContactList from '../Contact/ContactList';
 import Footer from '../Footer/Footer';
 
 export default function Homepage(props){
@@ -66,45 +67,14 @@ export default function Homepage(props){
                     Contact
                     </h4>
                     <div id="contact-list">
-                        <div className="row">
-                            <div className="col-lg-3 col-sm-12">
-                                <h5>
-                                    <a href="mailto:me@antonnorberg.se" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                                    <i className="fas fa-envelope"></i>
-                                    </a>
-                                </h5>
-                                <p><a href="mailto:me@antonnorberg.se">me@antonnorberg.se</a></p>
-                            </div>
-                            <div className="col-lg-3 col-sm-12">
-                                <h5>
-                                    <a href="https://www.linkedin.com/in/anton-norberg/" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                                        <i className="fab fa-linkedin-in"></i>
-                                    </a>
-                                </h5>
-                                <p><a href="https://www.linkedin.com/in/anton-norberg/">Anton Norberg</a></p>
-                            </div>
-                            <div className="col-lg-3 col-sm-12">
-                                <h5>
-                                    <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                                    <i className="fab fa-github"></i>
-                                    </a>
-                                </h5>
-                                <p><a href="https://github.com/annorberg98/">annorberg98</a></p>
-                            </div>
-                            <div className="col-lg-3 col-sm-12">
-                                <h5>
-                                    <a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer" className="contact-icons">
-                                    <i className="fas fa-map-marked-alt"></i>
-                                    </a>
-                                </h5>
-                                <p><a href="https://goo.gl/maps/WLqvkF2FNBQJGq7b9" target="_blank" rel="noopener noreferrer">Malmö, Sweden</a></p>
-                            </div>
-                        </div>
+                        <ContactList />
                     </div>
                 </section>
                 <section className="content" id="personalSection">
                     <h1>Want to check out my projects?</h1>
-                    <p><a href="#projects">Click here!</a></p>
+                    <h4>Comming soon</h4>
+                    <p>Check out my <a href="https://github.com/annorberg98/" target="_blank" rel="noopener noreferrer">Github</a> in the meantime.</p>
+                    {/*<p><a href="#projects">Click here!</a></p>*/}
                 </section>
             </main>
             <Footer />
