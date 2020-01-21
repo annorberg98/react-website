@@ -84,11 +84,12 @@ header#header {
 
 
 span#letter-a {
-  color: #08fdd8;
+  /*color: #08fdd8;*/
+  color: black;
 }
 
 span#letter-n {
-  color: #ff0a56;
+  color: black;
 }
 
 

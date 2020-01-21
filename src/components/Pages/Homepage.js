@@ -54,11 +54,14 @@ export default function Homepage(props){
                 </section>
                 <section className="content" id="competences">
                     <div className="row">
-                        <div className="col-lg-6 col-sm-12">
+                        <div className="col-lg-4 col-sm-12">
                             <SkillList tech="Web" />
                         </div>
-                        <div className="col-lg-6 col-sm-12">
+                        <div className="col-lg-4 col-sm-12">
                             <SkillList tech="Programming" />
+                        </div>
+                        <div className="col-lg-4 col-sm-12">
+                            <SkillList tech="Misc" />
                         </div>
                     </div>
                 </section>

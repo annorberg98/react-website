@@ -6,9 +6,10 @@ export default class SkillList extends React.Component {
     tech = {
         'Web' : {
             'title': "Web Technologies",
+            'color': 'success',
             'data' : [
                 { 
-                    'name': 'HTML',
+                    'name': 'HTML5',
                     'value': 90
                 },
                 {
@@ -35,6 +36,7 @@ export default class SkillList extends React.Component {
         },
         'Programming': {
             'title': 'Programming Languages',
+            'color': 'danger',
             'data': [
                 { 
                     'name': 'Python',
@@ -42,11 +44,11 @@ export default class SkillList extends React.Component {
                 },
                 { 
                     'name': 'PHP',
-                    'value': 60,
+                    'value': 50,
                 },
                 { 
                     'name': 'C#',
-                    'value': 25 
+                    'value': 50 
                 },
                 { 
                     'name': 'Javascript',
@@ -56,7 +58,33 @@ export default class SkillList extends React.Component {
                 {
                     'name': 'Java',
                     'value': 15
-                }
+                },
+            ]
+        },
+        "Misc": {
+            'title': 'Miscellaneous',
+            'color': 'primary',
+            'data': [
+                {
+                    'name': 'Datastructures & Algorithms',
+                    'value': 20
+                },
+                {
+                    'name': 'Information Security',
+                    'value': 50
+                },
+                {
+                    'name': 'Information Architecture',
+                    'value': 35
+                },
+                {
+                    'name': 'Databases',
+                    'value': 50
+                },
+                {
+                    'name': 'Git',
+                    'value': 55
+                },
             ]
         }
     }
@@ -69,12 +97,13 @@ export default class SkillList extends React.Component {
 
     render(){
         let index = 0;
+        
         return(       
                 <Card>
                     <Card.Body>
                         <h5 className="card-title">{this.state.tech.title}</h5>
                         {this.state.tech.data.map(element => 
-                            <Skill title={element.name} value={element.value} key={index++}/>
+                            <Skill title={element.name} value={element.value} color={this.state.tech.color} key={index++}/>
                             )}
                     </Card.Body>
                 </Card>
