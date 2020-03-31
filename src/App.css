@@ -213,6 +213,10 @@ div.skill-card > .card {
   color: #fff;
 }
 
+div.progress {
+  background-color: #1e2022;
+}
+
 .contact-icons {
   font-size: 5rem;
   color: #fff;
